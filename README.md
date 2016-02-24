@@ -1,2 +1,2 @@
-# home.1074vectors.com
+# 1074vectors.github.io
 home page
