@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:black;color:orange" >
+<br>
+&nbsp&nbsp
+<img src="images/1074vectors_logo.png" alt="1074 Vectors logo"/>
+<br><br>
+<br><br>
+
+<h1>How 3D can be memorized? </h1>
+<br><br>
+<p>A good point to discuss. Usually storing in memory is a challenge for professional 3D applications. What is the simple way is keep a set of points? Each with 3 position values. That is x,y and z. just a keep a list of points. It is the most natural way of memory representation.  </p>
+<p>But this thumb rule is not actually always practical. Based on the nature of the data, this may not be that wise to keep x,y,z for each points. Consider the case of an abdominal CT scan. It is volumetric data and dense with equidistant inner points. Technically this data is called ‘volume’ and inner points as ‘voxels’ (similar rhyming pronunciation of its 2D cousin ‘pixel’). Here keeping positional values with its intensity (tissue data) is heavy in size. </p>
+<p>An example will sufficiently explain that. Suppose the volume is 2048 x 2048 x 512 of dimension, there will be 2 billion voxels. The size to keep points and 2 byte intensity values for these points will be 4 billion bytes (~4 gb). Additionally to keep the position we need to keep 3 integers. With 4 bytes for each integer that size will be 12 x 2 billion! 24 billion bytes or 24 gb to keep an information of 4 gb. Ridiculous. Right? Obviously the volume is stored as an array of voxel values. Position is usually assumed for the rendering purpose. Also PACs systems in healthcare can have location of this 3D image in DICOM format. Interestingly the systems afford reduction in number of slices compared to their pixel to pixel spacing in one slice. This increase in distance between slices enables reduction in storage space. For example, if the no of slices are reduced to 256 in above example, the size of the volume will be 1 GB. </p>
+<p>Stereoscopic imaging or devices like Kinect® output 2D with a depth. As in the case of volumes it also best stored in an array. At each point just keep RGB and depth. This memory representation is like a 2D image with depth. Sometimes called ½ dimension to 2D or 2.5D. Both in the case of volume and this data, the pixels or voxels are neighboring are leaving no space or no-holes between any two. That means an intermediate value between any two or 4 or 8 neighboring points will be a numerical approximation. Or interpolated value of this locality either 2D or 3D.  </p>
+<p>As described, those are dense data as an image. For spatially apart data, storing as points will be logical. These points are usually called point clouds. In contrast with volumetric structures, they traditionally not representing any link among the neighborhood. Means ‘holes’ will be there if it is zoomed.</p>
+<p>When it moves from points to lines the representation is a list of points. It can be any splines. Frankly speaking… other than a few edge drawings, industrial graphics applications do not show much ‘lines’. Thus it does not mean much and a thought around 3D lines are not that worth. But editing of the edges is an important matter for certain 3D editor kind of applications. Thus this connectivity information is used.</p>
+<p>Geometric shapes are can be parametrically represented. For storing a sphere, a center and a radius are only needed. For a synthetically made 3D data, it is normally created from a CAD kind of application with a combination of existing well known geometric shapes. It can be represented with this kind of minimal memory foot print. On the other hand a scanned data are normally gathered as points. The next possible approximation is its surface. Triangle is the best representation to show a surface. It is the smallest possible one as well as it is parallel computation friendly. The architecture of modern GPUs are familiar with this 3 point nano surface elements. With a set of triangles, theoretically any 3D shape can be stored in memory. A triangle list is again first form where all the triangles are just independent. Then comes the neighboring triangles and its efficient representations.  As a practical surface can have a lot of triangles, these methods are invented to share the common points between triangles. For example with a common centre point a circular arrange of triangles is called fan-arrangement. </p>
+<p>If an application can represent a surface in more parametric form than mere set of triangles, it will again give more sense. Both computationally as well as storing point of view. As the case of splines in 2D, NURBS are very common in 3D space at this level. Again moving a scanned/sensed data from points to this form is challenging. Also it will remove some outlier values by considering them as non-standard values or in non-mathematical way ‘as noise’! though not that used for rendering, this approximations are used for computations related to collision avoidance, simulation or NDT applications. </p>
+<p>Irrespective of the representation in memory, the user who see the data or analyze the data wants to watch it seamlessly. A simple operation is planar view which is almost similar to cross-section in non-mathematics terminologies. It can be an oblique cross section; means an angular cut. Suppose the slice spacing is 2mm and pixel spacing (in each slice) is 1 mm, the viewer has to adjust with ‘hole’ in the cross cut view! It is impossible! Usually to fill those holes the viewer software has to equip with a tricubic interpolation.  Briefly each data reduction has to pay something in computational complexity. This has to be decided based on the viewing hardware’s capacity to compute or FLOPS. Since the visuals are pixels on the screen, majority of this computation can be done in parallel targeting each pixel. So data model has to be tuned for this advantage.  GPU hardware both processor and its memory accessing architectures are designed for this parallel access as well as processing. </p>
+<p>Our discussion is getting lengthy…! </p>
+<p>From ancient Indian or Greeks to new mathematicians refer ‘tables’.  It is same for computers. For performance computed tables have been looked up. Since the base of computation is in the existing, LUTs are traditionally redundant. For rendering and data access purpose, 3D data usually remodeled even with a lot of redundancy in memory. LUTs holds computed values from a original raw data. To live in this redundancy, the programmer has to have utmost care on data management. </p>
+<p>Octree is another data structure which can be additionally kept to save processing time when data is accessed in 3D spatial way. </p>
+<p>When it comes to larger volumes and/or with those hardware with less memory space, ‘bricking’ is used. Small 3D volumes aka bricks, are used for computation which is done as a batch process. The complexities are at the boundaries of each bricks and overall boundary of the large volume. However it enables the programmer to use multi-gpu solutions for faster rendering/analysis.</p>
+<p>There are always ranges in values. Always a programmer should use this knowledge.  By knowing a minimum and maximum, a programmer can tune the entire data storage. For example a CT volume can store 4byte voxels. The maximum value of the voxels and max is 130,000.  Surely to keep these values at least 3 bytes are required.  What is the minimum value? It is 66,000. It gives a new light.  Suppose if you offset 66000 as 0. The range will be 0 to 64,000. That means only 16 bits are enough. By doing this a volume of 4GB in memory is reduced to 2GB.  There will be noises or outliers. Need to handle those too.</p>
+<p>Scenegraph is a data structure intended to rule the data access for rendering. It enables effective culling of unwanted data for view requested by user. Those few additional bytes may add memory footprint, but the software perform as per the expectation. </p>
+
+<br><br>
+------
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-74257275-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+
+</html>
