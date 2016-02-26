@@ -14,13 +14,17 @@
 <body style="background-color:black;color:orange" >
 <br>
 &nbsp&nbsp
-<img src="images/1074vectors_logo.png" alt="1074 Vectors logo"/>
+<img src="images/1074vectors_logo.png" alt="1074 Vectors logo" width ="800"/>
 <br><br>
 <br><br>
 
 <h1> How to be faster with multiGPU? </h1>
 <br><br>
 <p>In the terminologies of the 90’s, there is a classic term calld co-processor who assist the cpu for certain specialized jobs. GPUs are co-processors in that definition. But in 2016, GPUs far more than just assistants. It is powerful than CPUs.  It is true for both ends: an entry level PC with a discrete graphics card to a professional graphics workstation. In all cases it gives more FLOPS (floating point operations per second) for each $ you pay.</p> 
+<p>According to Moore’s law hardware industry grows 2X in each 18 months. Traditionally to increase full utilization, the clock also increase. So all software get speedup when you buy a new general hardware. But around 2008, we started to notice a paradigm shift: the rate of increase in clock speed slowed down. Its like more muscle power and slow instruction fetching. At this point, graphics processors, which are traditionally in parallel, took the advantage. They offered more FLOP for each clock signal by doing work in parallel. They are like many workers compared to CPU’s big muscled two or eight or sixteen workers.  So slowly nvidia released a c like language, CUDA, for the non-graphics programmers. So a good amount pure visual computing code can also be GPU than mere geometric calculations and shading.</p>
+<p>Graphics processors are classified with its shader model compatibility flag. It shows its ability to create and manipulate geometry for a color computation. Though the steps in a graphics pipe line is executed serially at each stage it is parallel. For example, at the end of the pipe line is pixel computation or pixel shader. It is just computing each pixel without knowing whether the neighboring pixel is computed or not. For a better priced gpu hardware the set of multi-processors in the gpu will be higher. Then it gives good result as more pixels can be computed in one batch. What if your current hardware is not enough for a required computation? There we arrive to a decision to parallelize more. That means multiple GPU solutions are used.</p>
+<p>The simple multi-gpu infra is clubbing more discrete cards in a motherboard. Next level is cluster where each node has a scheduler CPU and the work has to be distributed from the master cpu through these.  Another one is cloud based solutions with gpus such as NVIDIA KEPLER grid. </p>
+<p>Unlike the traditional programming, the parallel algorithms are heavily depends on the data flow considerations. So usually read and write are clearly evident and programming practice is often called as stream programming. Graphics computations has to be planned in the same way. So we split the input data as blocks and assign to each gpu with redundant border data. Graphics routines generally viewed as SIMD or SPMD. </p>
 
 <br><br>
 ------
