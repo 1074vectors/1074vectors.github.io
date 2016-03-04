@@ -1,0 +1,14 @@
+
+<?php
+function fixstring($strsourcestring)
+{
+//return $strsourcestrin=mysql_real_escape_string(trim(ltrim(rtrim($strsourcestring))));
+return $strsourcestrin=trim(ltrim(rtrim(str_replace("'", "''", $strsourcestring))));
+
+}
+function fixMysqlDateTime($dtSourceDateTime)
+{
+    $tempdatetime = new DateTime($dtSourceDateTime);
+    return $dtSourceDateTime=$tempdatetime->format('Y-m-d H:i:s');
+}
+?>

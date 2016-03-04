@@ -1,0 +1,58 @@
+<?php
+const DTS_KEY= "DTS"; 
+//define(DTS_KEY, "dt");
+function encrypt($str, $key)
+{
+    # Add PKCS7 padding.
+    $block = mcrypt_get_block_size('des', 'ecb');
+    if (($pad = $block - (strlen($str) % $block)) < $block) {
+      $str .= str_repeat(chr($pad), $pad);
+    }
+
+    return mcrypt_encrypt(MCRYPT_DES, $key, $str, MCRYPT_MODE_ECB);
+}
+
+function decrypt($str, $key)
+{
+    $str = mcrypt_decrypt(MCRYPT_DES, $key, $str, MCRYPT_MODE_ECB);
+
+    # Strip padding out.
+    $block = mcrypt_get_block_size('des', 'ecb');
+    $pad = ord($str[($len = strlen($str)) - 1]);
+    if ($pad && $pad < $block && preg_match(
+          '/' . chr($pad) . '{' . $pad . '}$/', $str
+                                            )
+       ) {
+      return substr($str, 0, strlen($str) - $pad);
+    }
+    return $str;
+}
+function base64_url_encode($input) {
+ return urlencode(strtr(base64_encode($input), '+/=', '-_,')."1");
+}
+
+function base64_url_decode($input) {
+$input=cut_string_using_last('1', urldecode(str_replace("%252C", ",", $input)), 'left', false);
+ return base64_decode(strtr($input, '-_,', '+/='));
+}
+
+function cut_string_using_last($character, $string, $side, $keep_character=true) {
+    $offset = ($keep_character ? 1 : 0);
+    $whole_length = strlen($string);
+    $right_length = (strlen(strrchr($string, $character)) - 1);
+    $left_length = ($whole_length - $right_length - 1);
+    switch($side) {
+        case 'left':
+            $piece = substr($string, 0, ($left_length + $offset));
+            break;
+        case 'right':
+            $start = (0 - ($right_length + $offset));
+            $piece = substr($string, $start);
+            break;
+        default:
+            $piece = false;
+            break;
+    }
+    return($piece);
+} 
+?>

@@ -1,0 +1,12 @@
+<?php
+
+if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip'))
+	ob_start("ob_gzhandler");
+else
+	ob_start();
+ini_set('session.use_cookies', 'On');
+ini_set('session.use_trans_sid', 'Off');
+session_set_cookie_params(0, '/');
+session_start();
+
+?>
