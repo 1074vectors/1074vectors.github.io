@@ -1,0 +1,124 @@
+<?php
+include_once("includes/gzip.php");
+include_once("includes/settings.php");
+include_once("includes/encryption.php");
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1074 Vectors</title>
+<meta name="keywords" content="3D, programming,1074,vectors,picture,graphics,dimensions,engineering,Architecting,companies,software,homes ,RGB pixels,photograph,360 degrees,LIDAR,devices,SWOT ,mathematics,imaging,bytes,Stereoscopic ,memorized,data, x,y,z,DICOM ,Microsoft ,programmer ," />
+<meta name="description" content="3D programming make sense! When it deals with huge data, it’s terribly interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.
+
+We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="3D" />
+<meta name="copyright" content="3D"/>
+<meta name="publisher" content="3D"/>
+<!-- Set Viewport Options -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+<meta name='HandheldFriendly' content='true' />
+<meta name="apple-mobile-web-app-title" content="3D" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- FB OPENGRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="1074 Vectors" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="1074 Vectors" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="http://1074vectors.com "/>
+<!-- GOOGLE PLUS -->
+<meta itemprop="name" content="3D" />
+<meta itemprop="description" content="3D programming make sense! When it deals with huge data, it’s terribly interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.
+
+We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy." />
+<link rel="icon" type="image/x-icon" href="images/favicon.png" />
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/3d.css">
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+</head>
+<body id="top">
+<?php include("header.php");?>
+<!-- end navigation -->
+<section id="banner" >
+  <div class="banner"> <img src="images/inbanner.png"  width="100%"/></div>
+</section>
+
+<!---start profile--->
+<section id="innercontentarea" >
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12 heading" align="center"><span class="headspace">Thoughts</span></div>
+    </div>
+    <div class="row">
+      <div class="desc">
+        <p class="subhead">Professional 3D is not a single aspect. These thoughts will definitely give you a new dimension.</p>
+        <p class="subhead1">How your program can read 3D?</p>
+        <p> How to get 3D points? It is a discussion about methods to scan 3D.</p>
+
+<p>Stereoscopic imaging is the simple way to sense 3D. It is same as the way brain senses 3D from our eyes. All the one you need is two webcams with proper overlapped frustum. Correlate the same physical points on the two views that you get. The vision libraries such as OpenCV will give you aids. </p>  
+
+<p>There is a method called multiview reconstruction. Here, from multiple overlapped camera exposures of a subject in 360 degrees, it is possible to estimate the surface of the subject. For example, you can scan a sculpture with normal cameras. Cool. Right? J If there are more overlapped images, the output will be more accurate.</p>
+
+<p>The popular 3D sensing device is Microsoft Kinect®. It is bundled with xbox® . But MS also allows us to use it with PC too. It senses the scene as a typical image. 2D array of pixels. More than a typical image, a value will be there in each pixel which indicates the depth of the point. With an example, I can tell this: suppose you are taking a snap from the door. You will see a picture with hob, hood, your smiling partnerJ, spoons, plates and the refrigerator. Suppose the refrigerator is near to the door, you will see big side walls of it. Na?  If your program wants to read the data, you have two options, one: show the live web-cam to there or just show the already taken photograph in-front of the webcam as a printout. If you are using a webcam, it is just same. But if you are using a Kinect, both are different. Printed photograph is just an image with same depth value and the real placement of Kinect at the door opening of the kitchen will give image with proper depth value.</p>
+
+<p>More than mere depth-mapped images, MS is offering a human sensing from Kinect. The programmer will get skeleton of persons from the frame/image. It is wonderful for the HMI developers. As Microsoft rightly said the human remote controllers!</p>
+ 
+<p>The data that reported like this is just a 2D with depth or 2.5D.  Another accurate and faster industrial sensors are LIDAR. They are named after the concept laser based radar. It also gives a point cloud information. It is sensed usually from a fast moving vehicle such as mounted on an SUV (mobile Lidar) or an aero plane (areal lidar). The points are usually very dense so it is called point cloud. A consecutive frame will be having a lot of overlapped points. So the data at the stage is enormous with these duplicates. Usually Lidar scanners are fitted on a frame with a set of optical cameras. So mapping of RGB pixels with the point-cloud is usually possible. However removing redundant points is a must when multiple scans are clubbed. Usually the bundled libraries by the Lidar vendors will do these. Thus Lidar scanners are usually an offline process where as Kinect is engineered for live scanning.</p>
+
+<p>Another sensor of this kind is ultra sound probes. It is very common and widely used in healthcare. It also gives a fan of points in 3D perpendicular to the probe. Usually the sound waves response are being directly used for imaging. The seismic scanning applications are all working this kind of echo based technics. Depending upon the properties of the medium as well as the frequencies used, scan conversion functions and noise considerations are different. But computationally almost same techniques.</p>
+
+<p>Apart from this depth map generators, the other set of scanners are obviously volumetric scanners. A set of xray images are used in CT for creating a 3D volume. This reconstruction is a compute intensive process which is offline. There is an interesting term ‘voxel’. It is a smallest element of a volumetric data which is equally spaced in real world dimensions. Like its counterpart, ‘pixel’ in 2D, the voxels are also touching its neighbors. So resolution of volume is a quality measure. For each voxel, a value is kept in 2byte or 4 bytes form. This intensity represents the quality. Usually the scanning systems keep this 3D image as stacked slices of 2D images. MRI kind of modalities also results in 3D volumes in this kind. Volumetric data can be viewed by assigning a transfer function. Since the each voxel value represents a special kind of tissue, a simple colormap will give a good result.</p>
+
+<p>Then all these are imaging techniques so relation   between each neighboring points or voxels usually lost and signal processing techniques has to be applied to estimate the relations. 6DoF devices such as Razer Hydra® can give you 3D position on real-time. With a correct coordinate conversion a programmer can easily map a physical unit such as MM. Majority of these devices uses magnetic system, there will be inaccurate zones (like at the boundaries of hemispheres), but the major advantage is they do not demand eye-of-sight with their base. Since the programmer can assign special HMI for specific purposes, a continuous movement can collect a smooth 3D connected points which can be fitted with curves as well as planes.</p>
+      <p class="subhead1">3D in memory</p>
+      <p>A good point to discuss. Usually storing in memory is a challenge for professional 3D applications. What is the simple way is keep a set of points? Each with 3 position values. That is x,y and z. just a keep a list of points. It is the most natural way of memory representation.  </p>
+
+<p>But this thumb rule is not actually always practical. Based on the nature of the data, this may not be that wise to keep x,y,z for each points. Consider the case of an abdominal CT scan. It is volumetric data and dense with equidistant inner points. Technically this data is called ‘volume’ and inner points as ‘voxels’ (similar rhyming pronunciation of its 2D cousin ‘pixel’). Here keeping positional values with its intensity (tissue data) is heavy in size.</p>
+
+<p>An example will sufficiently explain that. Suppose the volume is 2048 x 2048 x 512 of dimension, there will be 2 billion voxels. The size to keep points and 2 byte intensity values for these points will be 4 billion bytes (~4 gb). Additionally to keep the position we need to keep 3 integers. With 4 bytes for each integer that size will be 12 x 2 billion! 24 billion bytes or 24 gb to keep an information of 4 gb. Ridiculous. Right? Obviously the volume is stored as an array of voxel values. Position is usually assumed for the rendering purpose. Also PACs systems in healthcare can have location of this 3D image in DICOM format. Interestingly the systems afford reduction in number of slices compared to their pixel to pixel spacing in one slice. This increase in distance between slices enables reduction in storage space. For example, if the no of slices are reduced to 256 in above example, the size of the volume will be 1 GB.</p>
+
+<p>Stereoscopic imaging or devices like Kinect® output 2D with a depth. As in the case of volumes it also best stored in an array. At each point just keep RGB and depth. This memory representation is like a 2D image with depth. Sometimes called ½ dimension to 2D or 2.5D. Both in the case of volume and this data, the pixels or voxels are neighboring are leaving no space or no-holes between any two. That means an intermediate value between any two or 4 or 8 neighboring points will be a numerical approximation. Or interpolated value of this locality either 2D or 3D.  </p>
+
+<p>As described, those are dense data as an image. For spatially apart data, storing as points will be logical. These points are usually called point clouds. In contrast with volumetric structures, they traditionally not representing any link among the neighborhood. Means ‘holes’ will be there if it is zoomed.</p>
+
+<p>When it moves from points to lines the representation is a list of points. It can be any splines. Frankly speaking… other than a few edge drawings, industrial graphics applications do not show much ‘lines’. Thus it does not mean much and a thought around 3D lines are not that worth. But editing of the edges is an important matter for certain 3D editor kind of applications. Thus this connectivity information is used.</p>
+
+<p>Geometric shapes are can be parametrically represented. For storing a sphere, a center and a radius are only needed. For a synthetically made 3D data, it is normally created from a CAD kind of application with a combination of existing well known geometric shapes. It can be represented with this kind of minimal memory foot print. On the other hand a scanned data are normally gathered as points. The next possible approximation is its surface. Triangle is the best representation to show a surface. It is the smallest possible one as well as it is parallel computation friendly. The architecture of modern GPUs are familiar with this 3 point nano surface elements. With a set of triangles, theoretically any 3D shape can be stored in memory. A triangle list is again first form where all the triangles are just independent. Then comes the neighboring triangles and its efficient representations.  As a practical surface can have a lot of triangles, these methods are invented to share the common points between triangles. For example with a common centre point a circular arrange of triangles is called fan-arrangement.</p>
+
+<p>If an application can represent a surface in more parametric form than mere set of triangles, it will again give more sense. Both computationally as well as storing point of view. As the case of splines in 2D, NURBS are very common in 3D space at this level. Again moving a scanned/sensed data from points to this form is challenging. Also it will remove some outlier values by considering them as non-standard values or in non-mathematical way ‘as noise’! though not that used for rendering, this approximations are used for computations related to collision avoidance, simulation or NDT applications.</p>
+
+<p>Irrespective of the representation in memory, the user who see the data or analyze the data wants to watch it seamlessly. A simple operation is planar view which is almost similar to cross-section in non-mathematics terminologies. It can be an oblique cross section; means an angular cut. Suppose the slice spacing is 2mm and pixel spacing (in each slice) is 1 mm, the viewer has to adjust with ‘hole’ in the cross cut view! It is impossible! Usually to fill those holes the viewer software has to equip with a tricubic interpolation.  Briefly each data reduction has to pay something in computational complexity. This has to be decided based on the viewing hardware’s capacity to compute or FLOPS. Since the visuals are pixels on the screen, majority of this computation can be done in parallel targeting each pixel. So data model has to be tuned for this advantage.  GPU hardware both processor and its memory accessing architectures are designed for this parallel access as well as processing.</p>
+
+<p>From ancient Indian or Greeks to new mathematicians refer ‘tables’.  It is same for computers. For performance computed tables have been looked up. Since the base of computation is in the existing, LUTs are traditionally redundant. For rendering and data access purpose, 3D data usually remodeled even with a lot of redundancy in memory. LUTs holds computed values from a original raw data. To live in this redundancy, the programmer has to have utmost care on data management.</p>
+
+<p>Octree is another data structure which can be additionally kept to save processing time when data is accessed in 3D spatial way.</p>
+
+<p>When it comes to larger volumes and/or with those hardware with less memory space, ‘bricking’ is used. Small 3D volumes aka bricks, are used for computation which is done as a batch process. The complexities are at the boundaries of each bricks and overall boundary of the large volume. However it enables the programmer to use multi-gpu solutions for faster rendering/analysis.</p>
+
+<p>There are always ranges in values. Always a programmer should use this knowledge.  By knowing a minimum and maximum, a programmer can tune the entire data storage. For example a CT volume can store 4byte voxels. The maximum value of the voxels and max is 130,000.  Surely to keep these values at least 3 bytes are required.  What is the minimum value? It is 66,000. It gives a new light.  Suppose if you offset 66000 as 0. The range will be 0 to 64,000. That means only 16 bits are enough. By doing this a volume of 4GB in memory is reduced to 2GB.  There will be noises or outliers. Need to handle those too.</p>
+
+<p>Scenegraph is a data structure intended to rule the data access for rendering. It enables effective culling of unwanted data for view requested by user. Those few additional bytes may add memory footprint, but the software perform as per the expectation.</p>
+<p class="subhead1">Challenges in huge data visualization</b></p>
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!---end profile---> 
+
+<!-- start footer -->
+<?php include("footer.php");?>
+</body>
+</html>

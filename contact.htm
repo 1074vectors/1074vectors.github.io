@@ -1,0 +1,177 @@
+<?php
+include_once("includes/gzip.php");
+include_once("includes/settings.php");
+include_once("includes/encryption.php");
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1074 Vectors</title>
+<meta name="keywords" content="3D, programming,1074,vectors,picture,graphics,dimensions,engineering,Architecting,companies,software,homes ,RGB pixels,photograph,360 degrees,LIDAR,devices,SWOT ,mathematics,imaging,bytes,Stereoscopic ,memorized,data, x,y,z,DICOM ,Microsoft ,programmer ," />
+<meta name="description" content="3D programming make sense! When it deals with huge data, it’s terribly interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.
+
+We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="3D" />
+<meta name="copyright" content="3D"/>
+<meta name="publisher" content="3D"/>
+<!-- Set Viewport Options -->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+<meta name='HandheldFriendly' content='true' />
+<meta name="apple-mobile-web-app-title" content="3D" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- FB OPENGRAPH -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="1074 Vectors" />
+<meta property="og:description" content="" />
+<meta property="og:site_name" content="1074 Vectors" />
+<meta property="og:image" content="" />
+<meta property="og:url" content="http://1074vectors.com"/>
+<!-- GOOGLE PLUS -->
+<meta itemprop="name" content="3D" />
+<meta itemprop="description" content="3D programming make sense! When it deals with huge data, it’s terribly interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.
+
+We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy." />
+<link rel="icon" type="image/x-icon" href="images/favicon.png" />
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/3d.css">
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.singlePageNav.min.js"></script>
+<script src="js/typed.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+</head>
+<body id="top">
+<?php include("header.php");?>
+<!-- end navigation -->
+<section id="banner" >
+  <div class="banner"> <img src="images/inbanner.png"  width="100%"/></div>
+</section>
+
+<!---start profile--->
+<section id="innercontentarea" >
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12 heading" align="center"><span class="headspace">Contact</span></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7 wow fadeInUp contact" >
+        <?php
+					// Change these two variables to meet your needs.
+					$status="";
+					$name = "";
+					$email ="";										
+					$msg = "";
+					$referer="";
+					$op1="";
+					$myemail = '1074vectors@gmail.com';	
+					
+					if($_POST)
+					{
+						$name = stripslashes($_POST['txtName']);						
+						$email = stripslashes($_POST['txtEmail']);						
+						$msg = stripslashes($_POST['txtMsg']);						; 
+						
+							if(!$status)
+							{					
+								$to_name = "Dcapital";
+								$to_email = $myemail;		
+								$headers = "From: $name <$email>\r\n";
+								$headers = "Reply-To: $name <$email>\r\n";								
+								$headers .= "MIME-Version: 1.0 \r\n";
+								$headers .= "Content-type: text/html; charset=iso-8859-1 \r\n";
+								$headers .= "Message-ID: <".gettimeofday()." TheSystem@".$_SERVER['SERVER_NAME'].">\r\n";
+								$headers .= "X-Mailer: PHP/' . phpversion();";
+								$mail_body="<html><body><table width=\"100%\"  border=\"0\" cellspacing=\"0\" bordercolor=\"#FFFFFF\" cellpadding=\"5\">";
+								$mail_body= $mail_body."<tr>";
+								$mail_body= $mail_body."<td ><strong>Name :</strong></td>";
+								$mail_body= $mail_body."<td >$name<br/></td>";
+								$mail_body= $mail_body."</tr>";
+								$mail_body= $mail_body."<tr>";
+								$mail_body= $mail_body."<td ><strong>Email id : </strong></td>";
+								$mail_body= $mail_body."<td >$email<br/></td>";
+								$mail_body= $mail_body."</tr>";															
+								$mail_body= $mail_body."<tr>";
+								$mail_body= $mail_body."<td ><strong>Message: </strong></td>";
+								$mail_body= $mail_body."<td >$msg<br/></td>";
+								$mail_body= $mail_body."</tr>";
+								$mail_body= $mail_body."</table></body></html>";
+								
+								
+								// Here 
+		
+		$from ="$name<$email>\r\n";
+		$to = "$to_name<$myemail>";
+		$subject = '1074vectors: CONTACT US';
+		$message = $mail_body;
+		$headers = "From: $from";
+
+		// boundary
+	   
+		$semi_rand = md5(time());
+		$mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+		$headers .= "Message-ID: <".gettimeofday()." TheSystem@".$_SERVER['SERVER_NAME'].">\r\n";
+		$headers .= "X-Mailer: PHP v".phpversion()."\r\n";
+		
+		// headers for attachment
+	   
+		$headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+
+		// multipart boundary
+		
+		$message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"iso-8859-1\"\n"."Content-Transfer-Encoding: 8bit\n\n" . $message . "\n\n";
+	   
+								$ok = @mail($to, $subject, $message, $headers, $returnpath);
+								$name="";
+								$country="";
+								$date="";
+								$text="";
+								$status = "<font color='white'><b>Thank you!!! We will get back to you soon.</b></font><br><br>";
+							}
+						
+					} 
+					
+					
+					?>
+        <form action="" method="post" name="frmContact1" id="frmContact1">
+          <input type="hidden" name="op1" value="contact">
+          <input type="hidden" name="referer" value="<?php print $referer; ?>">
+          <div><?php echo $status;?></div>
+          <div >
+            <input name="txtName" placeholder="Name" type="text"  class="fields && validate[required] text-input" >
+          </div>
+          <div>
+            <input name="txtEmail" placeholder="Email" type="text" class="fields && validate[required] text-input">
+          </div>
+          <div>
+            <input name="txtMsg" placeholder="Message" type="text" class="msgfields && validate[required] text-input">
+          </div>
+          <div>
+            <input class="send" value="SEND" type="submit">
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-4 wow fadeInRight contact3">
+        <div class="conthead1">Contact Address</div>
+        <div class="contadd">1074 Vectors</div>
+        <div class="contadd">Lorem ipsum dolor sit amet</div>
+        <div class="contadd">Lorem ipsum dolor sit amet</div>
+        <div class="contadd">1234567890</div>
+        <div class="contadd">Email:1074vectors@gmail.com</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---end profile---> 
+
+<!-- start footer -->
+<?php include("footer.php");?>
+</body>
+</html>
