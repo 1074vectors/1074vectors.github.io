@@ -111,7 +111,8 @@ We love the evolution of interactive 3D graphics. 3D programming always had a gl
 <p>There are always ranges in values. Always a programmer should use this knowledge.  By knowing a minimum and maximum, a programmer can tune the entire data storage. For example a CT volume can store 4byte voxels. The maximum value of the voxels and max is 130,000.  Surely to keep these values at least 3 bytes are required.  What is the minimum value? It is 66,000. It gives a new light.  Suppose if you offset 66000 as 0. The range will be 0 to 64,000. That means only 16 bits are enough. By doing this a volume of 4GB in memory is reduced to 2GB.  There will be noises or outliers. Need to handle those too.</p>
 
 <p>Scenegraph is a data structure intended to rule the data access for rendering. It enables effective culling of unwanted data for view requested by user. Those few additional bytes may add memory footprint, but the software perform as per the expectation.</p>
-<p class="subhead1">Challenges in huge data visualization</b></p>
+<p class="subhead1"><a name="EditingChallenge"></a>Challenges in 3D Editing</b></p>
+<p class="subhead1"><a name="3DAPIs"></a>Choice of 3D Programming APIs</b></p>
       
       </div>
     </div>
