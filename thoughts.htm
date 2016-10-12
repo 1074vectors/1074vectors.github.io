@@ -64,10 +64,10 @@ We love the evolution of interactive 3D graphics. 3D programming always had a gl
     <div class="row">
       <div class="desc">
         <p class="subhead">Professional 3D is not a single aspect. These thoughts will definitely give you a new dimension.</p>
-        <p class="subhead1"><a name="Reading3D"></a>How your program can read 3D?</p>
-        <p> How to get 3D points? It is a discussion about methods to scan 3D.</p>
+        <p class="subhead1"><a name="Acquire3D"></a>How 3D data is generated?</p>
+        <p> How to acquire 3D points? A discussion on generating 3D data.</p>
 
-<p>Stereoscopic imaging is the simple way to sense 3D. It is same as the way brain senses 3D from our eyes. All the one you need is two webcams with proper overlapped frustum. Correlate the same physical points on the two views that you get. The vision libraries such as OpenCV will give you aids. </p>  
+<p>Stereoscopic imaging is the simplest way to sense 3D. It is same as the way brain senses 3D from our eyes. All the one you need is two webcams with proper overlapped frustum. Correlate the same physical points on the two views that you get. The vision libraries such as OpenCV will give you aids. </p>  
 
 <p>There is a method called multiview reconstruction. Here, from multiple overlapped camera exposures of a subject in 360 degrees, it is possible to estimate the surface of the subject. For example, you can scan a sculpture with normal cameras. Cool. Right? J If there are more overlapped images, the output will be more accurate.</p>
 
@@ -82,7 +82,8 @@ We love the evolution of interactive 3D graphics. 3D programming always had a gl
 <p>Apart from this depth map generators, the other set of scanners are obviously volumetric scanners. A set of xray images are used in CT for creating a 3D volume. This reconstruction is a compute intensive process which is offline. There is an interesting term ‘voxel’. It is a smallest element of a volumetric data which is equally spaced in real world dimensions. Like its counterpart, ‘pixel’ in 2D, the voxels are also touching its neighbors. So resolution of volume is a quality measure. For each voxel, a value is kept in 2byte or 4 bytes form. This intensity represents the quality. Usually the scanning systems keep this 3D image as stacked slices of 2D images. MRI kind of modalities also results in 3D volumes in this kind. Volumetric data can be viewed by assigning a transfer function. Since the each voxel value represents a special kind of tissue, a simple colormap will give a good result.</p>
 
 <p>Then all these are imaging techniques so relation   between each neighboring points or voxels usually lost and signal processing techniques has to be applied to estimate the relations. 6DoF devices such as Razer Hydra® can give you 3D position on real-time. With a correct coordinate conversion a programmer can easily map a physical unit such as MM. Majority of these devices uses magnetic system, there will be inaccurate zones (like at the boundaries of hemispheres), but the major advantage is they do not demand eye-of-sight with their base. Since the programmer can assign special HMI for specific purposes, a continuous movement can collect a smooth 3D connected points which can be fitted with curves as well as planes.</p>
-      <p class="subhead1">3D in memory</p>
+      
+<p class="subhead1"><a name="3DInMemory"></a>3D in memory</p>
       <p>A good point to discuss. Usually storing in memory is a challenge for professional 3D applications. What is the simple way is keep a set of points? Each with 3 position values. That is x,y and z. just a keep a list of points. It is the most natural way of memory representation.  </p>
 
 <p>But this thumb rule is not actually always practical. Based on the nature of the data, this may not be that wise to keep x,y,z for each points. Consider the case of an abdominal CT scan. It is volumetric data and dense with equidistant inner points. Technically this data is called ‘volume’ and inner points as ‘voxels’ (similar rhyming pronunciation of its 2D cousin ‘pixel’). Here keeping positional values with its intensity (tissue data) is heavy in size.</p>
