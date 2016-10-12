@@ -49,6 +49,7 @@ We love the evolution of interactive 3D graphics. 3D programming always had a gl
     <script type="text/javascript" src="js/jssor.core.js"></script>
     <script type="text/javascript" src="js/jssor.utils.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <script>
         jQuery(document).ready(function ($) {
 			  var _CaptionTransitions = [];
@@ -341,6 +342,10 @@ We love the evolution of interactive 3D graphics. 3D programming always had a gl
         </section>
 
     <!-- start footer -->
-    <?php include("footer.htm");?>
+    <!-- <?php include("footer.htm");?> -->
+    <div w3-include-html="footer.html"></div>
+    <script>
+    w3IncludeHTML();
+    </script>
 </body>
 </html>
