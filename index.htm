@@ -1,175 +1,355 @@
-﻿<html>
-<title> 1074 vectors - the 3D people </title>
-<head>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<?php
+include_once("includes/gzip.htm");
+include_once("includes/settings.htm");
+include_once("includes/encryption.htm");
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>1074 Vectors</title>
+    <meta name="keywords" content="3D, programming,1074,vectors,picture,graphics,dimensions,engineering,Architecting,companies,software,homes ,RGB pixels,photograph,360 degrees,LIDAR,devices,SWOT ,mathematics,imaging,bytes,Stereoscopic ,memorized,data, x,y,z,DICOM ,Microsoft ,programmer ," />
+    <meta name="description" content="3D programming make sense! When it deals with huge data, it’s interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="3D" />
+    <meta name="copyright" content="3D"/>
+    <meta name="publisher" content="3D"/>
+    <!-- Set Viewport Options -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+    <meta name='HandheldFriendly' content='true' />
+    <meta name="apple-mobile-web-app-title" content="3D" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- FB OPENGRAPH -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="1074 Vectors" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="1074 Vectors" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="http://1074vectors.com "/>
+    <!-- GOOGLE PLUS -->
+    <meta itemprop="name" content="3D" />
+    <meta itemprop="description" content="3D programming make sense! When it deals with huge data, it’s interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-</head>
+We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy." />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/3d.css">
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jssor.core.js"></script>
+    <script type="text/javascript" src="js/jssor.utils.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+			  var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, $FlyDirection: 1, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $ScaleHorizontal: 0.6, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, $FlyDirection: 2, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $ScaleHorizontal: 0.6, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, $FlyDirection: 4, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $ScaleVertical: 0.6, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, $FlyDirection: 8, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $ScaleVertical: 0.6, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $FlyDirection: 10, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $ScaleHorizontal: 0.6, $ScaleVertical: 0.6, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
 
-<body style="background-color:black;color:orange;margin:10px;" >
-<br>
-&nbsp&nbsp
-<img class="img-responsive" src="images/1074vectors_logo.png" alt="1074 Vectors logo"  width="800" />
-<br><br>
-<br><br>
-<h1 style="font-size:350%;">
- Except <strong>3D</strong>,
-   all <strong>D</strong>s are fictions!
-<br>
-</h1>
-&nbsp&nbsp
-<img  class="img-responsive" src="images/clayMouldingChild.jpg" alt="1074 Vectors logo"/>
-<h1 style="font-size:250%;">
-<strong>3D</strong> does not demand <strong>mathematics</strong> to communicate.
-</h1>
-<br>
-<br>
-<br>
-<div align="justify">
-<p>3D programming makes sense! When it deals with huge data visualization, it's interesting too. <strong>1074 Vectors</strong> - The interactive 3D graphics expertize homes here. <strong>You</strong> are welcome as a reader, an enthusiast, a collaborator or as a product owner. 3D rendered screens will be the natural way to provide information from the data that you have!.
-</p>
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actuall size, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, default value is 1
 
-<h1>/ products: </h1>
-<h3>/ LidarLion </h3>
-<p> This product is a software ecosystem indented to use in Geographical Information systems domain.
-This accepts data scanned by LIDAR (Laser based Radars). The data is desnsed point clouds. 
-LidarLion is meant to be hosted in an intranet server and can be accessed by multple users same time. 
-Technically the heart of this product is 3D graphics. <a href="lidarlion.html">Have a look into our product site >></a> </p>
-<h1>/ home </h1>
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 1200,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
 
-<p>3D programming always had an artistic part and a precise engineering part. </p>
-<p>Let us talk about engineering first. It's been challenging to retain quality of 3D without losing accuracy and performance. How to reduce repeated computing to improve performance? Simple! Store some results. It’s a balance between Memory usage vs Computing for a better performance. This old theory is grabbing new attention nowadays. With the distributed nature and low-capacity of the new generation head-end devices, new parameters are evolving and balancing different aspects has become more challenging. As batteries are involved, the metrics like quality/watt and quality/degree-Celsius too need to be considered. As the FLOPS/$ for computing can be split between local and cloud enabled internet/intranet resources, the load division between them too is another point of consideration. In a nutshell, a good engineering solution cannot be achieved by tuning a single aspect alone.</p>
-<p>Much about the engineering aspects! Even though engineering always serves the purpose well, it does not consider the artistic quality. From Da-Vinci days itself, architecting plays an important role in beautifying engineering for artistic purpose. Architecting is not just engineering; it stands somewhere between engineering and art. Without a good combination of colors and effects, software can not impress users. For a good 3D software demands a good <strong> architecture</strong> to deliver pleasing its users and for utilizing the quality engineering behind it. </p>
-<p>At 1074Vectors, we love to deliver the artistic aspects excellently. For that, our engineering team do the best under the hood of these excellent screens. We do architect not just engineer the 3D solutions.</p>
-<p>To know more about doing a business with our support, please see <a href="#BIZ">/business</a> link.</p>
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
 
-<p><strong>Important Note:-</strong></p>
-<p>All companies have a weakness to point out in their SWOT charts. Ours is constraints on schedule vs availability of good man-power. Yes. It’s a point to consider as it is connected with schedule constraints. It is also directly connected with our strengths: QoS and Privacy handling. We have strict privacy handling strategy so as to protect our customer’s intellectual interests. As it is very well known, only people with good quality can keep privacy intact. The side effect is, we heavily depend on the core people we have. So book your engagement period beforehand. But always feel free to talk… we are happy to hear you. </p>
+                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
 
-<h1 id="BIZ">/ business </h1><br>
-<h3>/ engagement models</h3><br>
-<p>
-We do programming. Specializes in “behind the screen technologies” of interactive graphics. More than coding, our job includes technology selection, architecting and technical support after deployment. Normally the technical support is provided against queries specific to certain hardware platforms (eg:- GPU). </p>
-<p>
-Global Software development is not that easy. Especially when it comes to 3D. Our ‘e’ medias still has a lot to grow in communicating subjects around 3D. In this scenario, it’s not that easy to start an engagement that will result in a win-win situation.
-</p> <p>
-We value our time and that of our clients too. We value the money budgeted for the project. Hence we do ‘outcome’ based model of business (a.k.a turnkey contracts). There is no man power discussions as we value the result than charging for man-hours. However still… to start any development it is important to know the volume initially itself.
-</p> <p>
-We adopt two methods to START the engagement. One is unpaid, while the other is marginally charged.</p> <p>
-1.     Proposal  (unpaid)</p> <p>
-2.     Technical analysis report & estimate</p> <p>
-Proposals: Proposals are executed for a first level review of the requirements in a technology context. Obviously it will propose a solution in a document. It will have technology details and rough understanding of the requirements. It may also include a ball park estimate. It depends on the clarity of the solution, the complexity of targeted hardware and known varieties of input data. As our experts are normally engaged, scheduling for a proposal may take time. So this unpaid method is apt for those who have flexibility in time-to-market. </p> <p>
-Technical Analysis report with estimation: A document is delivered which contains a proposed solution with refined requirements, Technology selection, project schedule and a price estimate. Project will have an FS stage (functional specification stage) after this. This stage gives clarity on the features of the solution. But Technical analysis report is made after testing the potentially risky areas. Though the features are not fully formed, normally we can expect a good success rate, which is around 86% for us. The rest had requirement revamping during the course of the time. Depending on the complexity, the price ranges from 3000 USD to 30,000 USD.</p>
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
 
-<p><strong>Which model is apt?</strong> For an industrialist, it is better to start with the latter engagement model as the estimates here are accurate than a mere ballpark. This will help in proper budgeting which may again need to plan cash-flow. Though this is a paid method, the value of the report is not fully charged as we are also considering things in a start-up mind-set. After all, the success of this report is the beginning of a wonderful industrial product. If you are just seeking for a possibility of a solution for an initial planning as an academic exercise, first method is sufficient though the schedule is bit unpredictable.</p>
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
 
-<h3>/ contact </h3> <br>
-e-mail id : yourBuddy@1074vectors.com  <br><br>
-phone & whatsapp : +91 98 460 10 223 <br><br>
-Google hangout: 1074vectors.<br><br>
-Kindly post your messages to start our discussion.<br><br>
-<h3 id="PRIVACY">/ privacy</h3> <br>
-<p>
-Hard cipher systems are too poor compared to secrecy handling of a human brain! 1074 Vector’s privacy strategy is very systematic and matured. First of all, our core engineering team perfectly knows each other for last 20+ years. Each engagement is interfaced by one from the core team. The core team members are collectively responsible for offering the solution. The core team do not pass any information without declassification to other teams. Means the mathematics or art team will only be knowing a part of the problem space. The declassification process is strategically our trade secret. Though we cannot give much light on that, in brief, it is based on terminology-mangling. We have process and practices which are matured over years. Surely, the bonding among the core team members is the key in keeping the privacy strategy as a business pitch.
-</p>
-<p>Since the declassification is not just in a law point of view, the receivers cannot even identify the product to which they have contributed.</p>
-<p>Business impact of this privacy strategy is in the execution. The trusted core team’s planned availability and mitigation of unplanned absences, are always a bottleneck for a smoother execution. Thus our privacy strategy is not that economical to us when a team member needs an unplanned leave. Partly it is because of our turnkey engagement model. However 7 out of 10 projects are always on time.</p>
-<h3>/ availability</h3><br>
-<p>Tentative schedule to take up activities is given below.   This will be helpful for your planning.
-</p>
-Discussions: any time.
-<br><br>
-Proposal & Ball Park estimate: 15 Dec 2016 (start)
-<br><br>
-Paid proposal/Technical Analysis & estimate:  01 Jan 2016 (start)
-<br><br>
-Load indicators: <br>
-04/16:  75%<br>
-05/16:  75%<br>
-06/16: 100%<br>
-07/16: 100%<br>
-08/16: 100%<br>
-09/16: 100%<br>
-10/16: 100%<br>
-11/16: 100%<br>
-12/16:  75%<br>
-<br><br>
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
 
-<h1>/ thoughts </h1><br>
-Professional 3D is not a single aspect. These thoughts will definitely give you a new dimension.
-<br><br>
-<h3>How your program can read 3D? </h3><br>
-It is a discussion about methods to scan 3D.
-<br>
-Stereoscopic imaging is the simple way to sense 3D. It is same as the way brain senses 3D from our eyes. All the one you need is two webcams with proper overlapped frustum. Correlate the same physical points on the two views that you get...
-<a href="1074.Vectors.How.to.get.3D.points.htm">Read in full >></a>
-<br><br>
-<h3>3D in memory </h3><br>
-Usually storing in memory is a challenge for professional 3D applications. What is the simple way is keep a set of points? Each with 3 position values. That is x,yand z. just a keep a list of points. It is the most natural way of memory representation.
-<br><br>
-But this thumb rule is not actually always practical. Based on the nature of the data...
-<a href="1074.Vectors.3D.in.memory.htm">Read in full >></a>
-<br><br>
-<h3>Challenges in 3D editing </h3><br>
-It was always been difficult to interact with 3D models on a computer screen as it is just a 2D space and the sense of depth is provided using the perspective display method. One can easily understand the movement of an object in the 2 directions aligned with the sides of the screen; be it of the mouse pointer or any 3D object. But there is no way for the user to identify the movements in the 3rd dimension, which is normally inward and outward of the screen.
-<a href="1074.Vectors.Challenges.In.3D.Editing.htm">Read in full >></a>
-<br><br>
-<h3>Choice of 3D Programming APIs </h3><br>
-There are only a few options when it comes to programming in 3D. While Microsoft is promoting DirectX and Apple promoting Metal, there is a huge fan base for Open GL too which is an open specification driven by the Khronos group. Of course, the popularity of Open GL is because of its cross-platform support. While the DirectX...
-<a href="1074.Vectors.3D.Programming.APIs.htm">Read in full >></a>
+            ScaleSlider();
 
-<br><br>
-<h3>How to be faster with Multi-GPU </h3><br>
-In the terminologies of the 90’s, there is a classic term calld co-processor who assist the cpu for certain specialized jobs. GPUs are co-processors in that definition. But in 2016, GPUs far more than just assistants. It is powerful than CPUs.  It is true for both ends: an entry level PC with a discrete graphics card to a professional graphics workstation. In all cases it gives more FLOPS (floating point operations per second) for each $ you pay.
-<a href="1074.Vectors.Supporting.MultiGPU.htm">Read in full >></a>
-<br><br>
-<h3>Handling the target GPU  </h3><br>
-<p>We have had a few interesting experiences when we handled different GPU generations. Its quite amazing and risky that if we do program 3D screeens without considering those aspects. However it varies over time. Yet to publish this article. </p>
-<h1>/ join </h1><br>
-<p>Falling in love is a must! Yes... If you have you be in love with <strong>3D</strong>. It is our first criteria!! </p>
-<p>We welcome 3D loving programmers.. see a few points to consider before you attempt...</p>
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
 
-<ul>
-  <li>Sense in 3D. With a white board or piece of paper, it's hard to communicate 3D with full sense. Only indications that we can draw or talk. But as part of our global team, you have have this skill. </li>
-  <li>You may be good in JS or openGL ES. We agree that you are expert too. But in 1074 vectors, we love close-to-metal programming knowledge. We call it knowledge about system architecture, c programming knowledge, network stack knowledge, processor architecture or simply under-the-hood programmer knowledge!</li>
-  <li>Be connected. How well it can be, always good. We want you to learn seamlessly. Be abreast.</li>
-  <li>Travel friendly...? good.. not just going somewhere and talk. But we want you to respect global cultures and feel the implicit meaning of each expressions.</li>
-  <li>Last... but very important: We are <strong>trusting</strong> you and you are <strong>trusting</strong> us. Please have a look at business/privacy in the web page. That is our commitment to the world. If you are ready for that professional life based on <strong>trust</strong>, you are eligible for joining us. Even if you don't join us too... we respect you. :) </li>
-</ul>
-<p>
-Please send your profile to <strong>yourBuddy@1074Vectors.com</strong>. Expecting the following non-confidential details about you for the first interaction. However these are not limiting you to tell some other vital facts!. :)
-</p>
-<strong>
-Name </strong> (with salutation as per your preference) <br>
-<strong>
-Locality </strong>  <br>
-<strong>
-Why 1074vectors ? </strong> (just think aloud! brief why you are interested!) <br>
-<strong>
-University certifications </strong> (with university name and link) <br>
-<strong>
-Industry/Biz certifications </strong> (with links and year) <br>
-<strong>
-Workshops/Tradeshows </strong> (you have presented/active/demoed links and year) <br>
-<strong>
-Online </strong> (blogs, forums etc) <br>
-<strong>
-Code of Ethics </strong> (may be yours or the list that you like anything!) <br>
+
+            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            //    $(window).bind("orientationchange", ScaleSlider);
+            //}
+            //responsive code end
+        });
+    </script>
+    </head>
+    <body id="top">
+<!--    <?php include("header.htm");?> -->
+
+<!-- HEADER.HTM BEGIN --> 
+
+<!-- start preloader -->
+
+<div class="preloader">
+  <div class="sk-spinner sk-spinner-wave">
+    <div class="sk-rect1"></div>
+    <div class="sk-rect2"></div>
+    <div class="sk-rect3"></div>
+    <div class="sk-rect4"></div>
+    <div class="sk-rect5"></div>
+  </div>
 </div>
-<p>-- <strong>eof</strong> --</p>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-74257275-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</body>
+<!-- end preloader --> 
+<!-- start navigation -->
+<section id="navbar">
+  <nav class="navbar templatemo-nav " role="navigation" >
+    <div class="container" >
+      <div class="navbar-header"><div id="logo"><a href="index.php" class="wow fadeInLeft"><img src="images/logo.png" height="70px" width="70px;" ></a></div> <div class="resmenu"><a id="resp-menu" class="responsive-menu" href="#">
+   Menu</a></div>
+        <ul class="menu wow fadeInUp" >
+          <li><a  href="#Home" >
+            <div class="menulink"> 3D</div>
+            <div class="menusep"></div>
+            </a></li>
+          <li><a href="lidarlion.html">
+            <div class="menulink"> Products</div>
+            <div class="menusep"></div>
+            </a></li>
+          <li><a  href="#Profile">
+            <div class="menulink">Profile</div>
+            </a></li>
+          <li id="logomenu"><a href="index.php" class="wow fadeInLeft"><img src="images/logo.png" ></a></li>
+          <li><a  href="#Thoughts">
+            <div class="menulink">Thoughts</div>
+            </a></li>
+          <li><a  href="#Join">
+            <div class="menusep"></div>
+            <div class="menulink">Contact</div>
+            </a> </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+</section>
+<!-- end navigation --> 
 
+<!-- start home --> 
+
+<!-- HEADER.HTM END --> 
+
+    <!-- end navigation -->
+    <section id="banner">
+      <div class="banner wow fadeInLeft" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 100%; height:auto; overflow: hidden;"> <img src="images/banner.png"  style="width: 100%; height:auto;"/></div>
+    </section>
+
+    <!-- start home -->
+    <section id="home1" class="slide">
+        <a name="Home"></a>
+      <div id="slider1_container" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height:503px; overflow: hidden;">
+      
+      <!-- Slides Container -->
+      <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 503px; overflow: hidden;">
+      <div> <img u="image" src="images/banner1.png" /> </div>
+      <div> <img u="image" src="images/banner2.png" /> </div>
+      <div> <img u="image" src="images/banner3.png" /> </div>
+      
+      <!-- bullet navigator container -->
+      <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;"> 
+        <!-- bullet navigator item prototype -->
+        <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+      </div>
+      <!-- Bullet Navigator Skin End --> 
+      
+      <!-- Arrow Navigator Skin Begin -->
+      <style>
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l              (normal)
+            .jssora21r              (normal)
+            .jssora21l:hover        (normal mouseover)
+            .jssora21r:hover        (normal mouseover)
+            .jssora21ldn            (mousedown)
+            .jssora21rdn            (mousedown)
+            */
+            .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
+            {
+            	position: absolute;
+            	cursor: pointer;
+            	display: block;
+                background: url(images/a09.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21ldn { background-position: -243px -33px; }
+            .jssora21rdn { background-position: -303px -33px; }
+        </style>
+      <!-- Arrow Left --> 
+      <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 0px;"> </span> 
+      <!-- Arrow Right --> 
+      <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 0px"> </span> 
+      <!-- Arrow Navigator Skin End --> 
+      
+    </section>
+
+    <!-- end home --> 
+    <!---start profile--->
+    
+    <section id="profile" >
+    <a name="Profile"></a>
+    <div class="container" >
+        <div class="row">
+          <div class="col-sm-12 heading wow fadeInDown " align="center"><img src="images/profile1.png" width="99" height="99"> <span class="headspace">Profile</span></div>
+        </div>
+        <div class="row">
+          <div class="desc wow fadeInLeft">
+            <p>3D programming make sense! When it deals with huge data, it’s terribly interesting too. 1074 Vectors, the interactive 3D graphics expertize, homes here.</p>
+            <p>We love the evolution of interactive 3D graphics. 3D programming always had a glorious fancy part and an engineering part. It’s been challenging to keep performance with required accuracy. How we balance the usage of memory to reduce repeated computing? When it mixes with distributed nature and capacity of the new generation head-end devices, it can be again challenging. Engineering always serves the purpose well, any artistic rendering will be neglected. But without a good combination of colors and effects a good software will not please users.</p>
+            <p>From Da-Vinci days itself, architecting plays an important role to beautify engineering for an artistic purpose. Architecting is not just engineering its very close to art.</p>
+            <p>We do business because of passion in 3D graphics. See business link…</p>
+            <p>All companies have weak part in their SWOT charts. Our point to mention is schedule constraints. We have strict privacy handling strategy to protect our customer’s intellectual interests. The side effect is we heavily depend on the people we have. So book your engagement period before hand. But always feel free to talk… we are happy to hear you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---end profile---> 
+    <!-- start about -->
+    <section id="thoughts" >
+    <a name="Thoughts"></a>
+      <div class="container" >
+        <div class="row">
+          <div class="col-sm-12 heading  wow fadeInDown" align="center"><img src="images/thought.png"> <span class="headspace">Thoughts</span></div>
+        </div>
+        <div class="row content">
+          <div class="col-sm-12">
+            <p>Professional 3D is not a single aspect. These thoughts will definitely give you a new dimension.</p>
+          </div>
+        </div>
+        <div class="row details">
+          <div class="col-sm-3 wow fadeInLeft"><a href="thoughts.htm">
+            <div class="img"><img src="images/imag1.png" style="border:none;"></a></div>
+            <div class="articlename">
+              <h4>Acquiring 3D</h4>
+            </div>
+            <div class="desc"> Stereoscopic imaging is the simple way to sense 3D. It is same as the way brain senses 3D from our eyes. All the one you need is two webcams with proper overlapped frustum. Correlate the same physical points on the two views that you get... </div>
+            <div class="more"><a href="thoughts.htm#Acquire3D"><img src="images/arow.png"></a></div>
+          </div>
+          <div class="col-sm-3 wow fadeInLeft"><a href="thoughts.htm">
+            <div class="img"><img src="images/imag2.png" style="border:none;"></a></div>
+            <div class="articlename">
+              <h4>3D In Memory</h4>
+            </div>
+            <div class="desc">Usually storing in memory is a challenge for professional 3D applications. What is the simple way is keep a set of points? Each with 3 position values. That is x,yand z. just a keep a list of points. It is the most natural way of memory representation. But this...</div>
+            <div class="more"><a href="thoughts.htm#3DInMemory"><img src="images/arow.png"></a></div>
+          </div>
+          <div class="col-sm-3 wow fadeInLeft"><a href="thoughts.htm">
+            <div class="img"><img src="images/imag3.png" style="border:none;"></a></div>
+            <div class="articlename">
+              <h4>Challenges in 3D Editing</h4>
+            </div>
+            <div class="desc"> It was always been difficult to interact with 3D models on a computer screen as it is just a 2D space and the sense of depth is provided using the perspective display method. One can easily understand the movement of an object in the 2 directions...</div>
+            <div class="more"><a href="thoughts.htm#EditingChallenge"><img src="images/arow.png"></a></div>
+          </div>
+          <div class="col-sm-3 wow fadeInLeft"><a href="thoughts.php">
+            <div class="img"><img src="images/imag4.png" style="border:none;"></a></div>
+            <div class="articlename">
+              <h4>3D Programming APIs</h4>
+            </div>
+            <div class="desc">There are only a few options when it comes to programming in 3D. While Microsoft is promoting DirectX and Apple promoting Metal, there is a huge fan base for Open GL too which is an open specification driven by the Khronos group. Of course...</div>
+            <div class="more"><a href="thoughts.htm#3DAPIs"><img src="images/arow.png"></a></div>
+          </div>
+        </div>
+        <div class="row morearticle">
+          <div class="col-sm-12 morearticles wow fadeInUp"><a href="thoughts.htm#Multi-GPU">MORE ARTICLES</a></div>
+        </div>
+      </div>
+    </section>
+    <section id="join" >
+    <a name="Join"></a>
+      <div class="container" >
+        <div class="row">
+          <div class="col-sm-12 heading  wow fadeInDown" align="center"><img src="images/thought.png"> <span class="headspace">Join</span></div>
+        </div>
+        <div class="row desc">
+       <p><b> We welcome all challenge loving programmers.</b></p>
+
+<ul><li> Passion towards 3D is our first criteria.</li>
+<li>Then a sense in 3D. With a white board or piece of paper,  its hard to communicate 3D. Only indications that we can draw or talk. Right? Yea.. then you got it. J</li>
+<li> You may be good in JS or openGL ES. We agree that you are an expert too. But in 1074 vectors, we love close-to-metal programming knowledge. We call it knowledge of system architecture, c programming knowledge, network stack knowledge, processor architecture or simply under-the-hood programmer knowledge!</li>
+<li>Be connected. We want you to learn seamlessly. Be abreast.</li>
+<li> Travel friendly…? Good.. not just flying and talking; we want you to know and respect global cultures. </li> 
+
+<p>Finally but very important: Trust…! We trust you and you trust us. Reach business/privacy. That is our commitment. If you are ready for that professional life based on trust, you are welcome to join us.</p>
+
+ 
+        </div>
+        </div>
+        </section>
+
+    <!-- start footer -->
+    <!-- <?php include("footer.htm");?> -->
+    <div w3-include-html="footer.htm"></div>
+    <script>
+    w3IncludeHTML();
+    </script>
+</body>
 </html>
