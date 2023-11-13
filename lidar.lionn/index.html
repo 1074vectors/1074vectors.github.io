@@ -1,0 +1,300 @@
+﻿
+<!--
+    lidarLionnBasic.html
+    copyright (c) 1074 vectors Private Limited 2020
+    version: 30-Dec-2019
+-->
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+<title>Mapping tool for Lidar and Aerial Images - lidar.lionn</title>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPS86MTWGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PPS86MTWGF');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="An easy to use planimetry mapping tool for Lidar LAS data and Aerial Images. Free trial available">
+  <meta name="keywords" content="lidar, LAS, Mapping, Aerial image, Mobile lidar, Planimetry, planimetric, lidar mapping, geospatial mapping, road marking, asset marking, lidar.lion">
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Planimetric mapping tool for Lidar and Aerial Images" />
+  <meta property="og:description" content="planimetric mapping on aerial imagery and lidar las data. Tool for geospatial mapping." />
+  <meta property="og:url" content="https://1074vectors.com/" />
+  <meta property="og:site_name" content="Tool for planimetric mapping" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+          $('i').css({
+            "opacity": "1",
+            "pointer-events": "auto"
+          });
+        } else {
+          $('i').css({
+            "opacity": "0",
+            "pointer-events": "none"
+          });
+        }
+      });
+      $('i').click(function() {
+        $('html').animate({
+          scrollTop: 0
+        }, 500);
+      });
+    });
+  </script>
+
+</head>
+
+<body style="color:#f69d01; background-color: rgba(251, 212, 148,0.0)">
+
+  <i class="fas fa-chevron-up"></i>
+
+  <div class="navbar">
+    <ul class="nav">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div id="home">
+    <img src="ll_logo.svg" style="width:100%; height:auto;" alt="ll_logo">
+  </div>
+
+  <div id="home" class="video-container">
+
+    <video autoplay loop class="video-background" muted plays-inline>
+      <source src="homepage_video.webm" type="video/webm">
+    </video>
+    <!--<iframe class="video-background"
+             src="https://www.youtube.com/embed/oX04g3XSMNM?showinfo=0;controls=0;autoplay=1;playlist=oX04g3XSMNM&loop=1" autoplay="autoplay">
+        </iframe>-->
+    <!--         <div class="overlay-desc">
+            <h1 class="text-over-video" style="font-size:1.8vw">Geospatial mapping simplified</h1>
+        </div> -->
+
+  </div>
+
+  <!--<div>
+        <p style="color:gray; font-size:3.3vw;text-align:center; font-family:Arial">
+            enabling millions for <b>geospatial</b> jobs<br />
+            &nbsp a <b>billion$</b> market <sub><sub>is now accessible to</sub></sub><br />
+            <b>millions</b> of undergraduates<br />
+        </p>
+    </div>-->
+
+  <div>
+    <br />
+    <br />
+    <p style="color:rgba(0,0,0,0.6); font-size:3.6vw;text-align:center; font-family:Arial; margin-left:15px;">
+      Digitize <b>Geospatial</b> in the language of your choice
+    </p>
+    <div style="padding:2%">
+      <div>
+        <img src="english.svg" class="image" alt="langulage english" style="margin-left:10%; margin-top:3%" />
+        <img src="telugu.svg" class="image" alt="language telugu" style="margin-left:13%; margin-top:3%" />
+        <img src="hindi.svg" class="image" alt="language hindi" style="margin-left:13%; margin-top:3%" />
+      </div>
+      <div>
+        <img src="kannada.svg" class="image" alt="language kannada" style="margin-left:10%; margin-top:3%" />
+        <img src="tamil.svg" class="image" alt="language tamil" style="margin-left:13%; margin-top:3%" />
+        <img src="malayalam.svg" class="image" alt="language malayalam" style="margin-left:13%; margin-top:3%" />
+      </div>
+      <div>
+        <img src="bangla.svg" class="image" alt="language bangla" style="margin-left:10%; margin-top:3%" />
+        <img src="marathi.svg" class="image" alt="language marathi" style="margin-left:13%; margin-top:3%" />
+        <img src="japanese.svg" class="image" alt="language japanese" style="margin-left:13%; margin-top:3%" />
+      </div>
+      <!--<div>
+            <img src="malayalam.svg" class="image" alt="sf" style="margin-left:32%; margin-top:3%" />
+            <img src="-japanese.svg" class="image" alt="sf" style="margin-left:16%; margin-top:3%" />-->
+    </div>
+    <div>
+      <p style="color:rgba(0,0,0,0.55); font-size:2.6vw; text-align:center; font-family:Helvetica; margin-left:10px;">
+        A tool designed for under graduates; amateurs can start digitizing with less than 2 hours of training </p>
+    </div>
+  </div>
+  <br />
+
+  <div class="text">
+    <div>
+      <img src="ll_logo_faq.svg" class="logo-img" />
+    </div>
+    <h1>
+      <p>
+        is a geospatial mapping software <br />
+        with minimalistic UI;<br />
+        It supports aerial images and LAS data and <br/>
+        it is apt for digitization / production grade workforce.<br />
+      </p>
+
+      <hr />
+
+      <p>
+        > Remote supervisor dashboard<br />
+        > Periodic management reports on efficiency of the team<br />
+        > Available in 7 Indic languages, English and Japanese<br /><br />
+      </p>
+    </h1>
+  </div>
+  <br />
+  <br />
+  <div>
+    <h1 style="font-family:sans-serif; text-align: center; font-size: 3.5vw; color: rgb(246,157,1);">
+      <u>lidar.lionn helps to simplify your team structure</u>
+    </h1>
+    <!--<hr class="uline" />-->
+    <p style="text-align:center; margin-top:3%; color: rgba(0,0,0,0.6); font-family: monospace; font-size: 3vw">100 Experts</p>
+    <img src="arrows.svg" style="margin-left: 49%; margin-top: 1%; width:1.8%; height: auto;" />
+    <p style="text-align:center; margin-top:1%; color: rgba(0,0,0,0.6); font-family: monospace; font-size: 3vw">20 Experts + 80 amateurs</p>
+
+    <p style="text-align:center; margin-top:1%; color: rgba(0,0,0,0.55); font-family: sans-serif; font-size: 2.5vw">
+      Giving jobs to <b>undergraduates</b> studied at local medium schools
+    </p>
+    <div style="background:rgba(184,230,243,0.5); height: 11vw; width: 100%; margin: auto; margin-top: 2.5%">
+      <p style="text-align:center; font-size:2.3vw; color:rgb(22,68,80);padding: 1.5%; font-family: sans-serif;">
+        "Computer literacy is not important. Only common sense is expected!. <br />We only gather team members when we
+        sign contract with our customers in Sweden.”<br /> – Bipin Kumar, GM GIS operations, Mega Tech, Bengaluru
+      </p>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <br />
+  <div id="faq">
+    <div>
+      <h1 style="color: rgba(41,50,52,0.9); text-align: center; font-family: sans-serif">
+        Frequently Asked Questions
+      </h1>
+    </div>
+    <div class="responsive-cards">
+      <div class="gallery">
+        <a href="faq.html">
+          <img src="faq01.svg" width="600" height="400" alt="lidar.lionn">
+        </a>
+      </div>
+    </div>
+    <div class="responsive-cards">
+      <div class="gallery">
+        <a href="faq.html">
+          <img src="faq02.svg" width="600" height="400" alt="billing for lidar.lionn">
+        </a>
+      </div>
+    </div>
+    <div class="responsive-cards">
+      <div class="gallery">
+        <a href="faq.html">
+          <img src="faq03.svg" width="600" height="400" alt="learning curve">
+        </a>
+      </div>
+    </div>
+    <div class="responsive-cards">
+      <div class="gallery">
+        <a href="faq.html">
+          <img src="faq04.svg" width="600" height="400" alt="limited features">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="wrapper-btn">
+    <a href="faq.html">
+      <button class="btn see-more">See more</button>
+    </a>
+  </div>
+
+  <!-- break-->
+  <br>
+  <br>
+  <br>
+  <div id="downloads">
+    <script>
+      function consent_changed(consentCheckBox){
+          //If the checkbox has been checked
+          if(consentCheckBox.checked){
+              //Set the disabled property to FALSE and enable the button.
+              document.getElementById("download_button").disabled = false;
+          } else{
+              //Otherwise, disable the submit button.
+              document.getElementById("download_button").disabled = true;
+          }
+      }
+    </script>
+    <p style="font-size:4vw;text-align:center;color: rgba(0,0,0,0.5); font-family: sans-serif; background: rgba(0,0,0,0.05)">
+      Download a fully functional 20 day trial
+    </p>
+    <p id="trial_download" style="padding-left:10%; padding-right:10%;font-size:2vw;text-align: justify;color: rgba(0,0,0,0.5); font-family: sans-serif; background: rgba(0,0,0,0.05)">
+      Note that, certain  usage information from the application shall be collected for improving the product. No personal information is collected.<br />
+      <input type="checkbox" id="consent" value="1" onclick="consent_changed(this)"/> <span style="font-size:1vw;">I Agree to the</span> <a href="lidar.lionn_plains_eula.htm" target="_blank"  style="font-size:1vw;">terms of license</a>
+      <a href="https://drive.google.com/file/d/1xXBqSCMswUCS-PkGIl1ttcCtJMR0c_dS/view?usp=sharing">
+        <button style="font-size:2vw" id="download_button" class="btn btn-primary btn-link btn-lg active" disabled> Download self extracting exe</button>
+      </a> <br/>
+      <span id="install_instructions" style="font-size:1vw;text-align: justify;color: rgba(0,0,0,0.5); font-family: sans-serif; ">
+        <a href="https://drive.google.com/file/d/1BHz0vYO2fuNB8kwmKfn68ObbdU_sKywJ/view?usp=sharing">View Installation Instructions </a>
+      <span/>
+    </p>
+  </div>
+
+  <hr/>
+  <div style="text-align: center; padding-left: 10%; padding-right: 10%;">
+  <h1>
+    Watch lidar.lionn in action
+  </h1>
+  <iframe class="responsive-embedded-video" width="560" height="315" src="https://www.youtube.com/embed/Qzf1OL-r9Ck" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="responsive-embedded-video" width="560" height="315" src="https://www.youtube.com/embed/BzreNm47-iI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <hr/>
+  <!-- break-->
+  <br>
+  <br>
+  <br>
+  <p id="contact" style="font-size:4vw;text-align:center;color: rgba(0,0,0,0.5); font-family: sans-serif;">
+    lidar.lionn is a minimalistic software <br />
+    surprisingly simple for your team!<br />
+    Contact us to know more...
+  </p>
+  <br>
+  <br>
+  <br>
+  <div style="background: #3e3e35">
+    <h1 style="font-family:monospace; text-align: center; font-size: 3.5vw; color: #ffffcc; padding: 1%">
+      <u>Contact Us</u>
+    </h1>
+    <!--<hr style="margin-right: 39%; margin-left: 39%; height: 4px; border-top: 4px solid rgba(0,0,0,0.2);" />-->
+
+    <br />
+    <br />
+    <p style="font-size:5vw;text-align:center;">
+      <a href="mailto:lidarlionn@1074vectors.com" style="font-size: 3vw; color: white;">lidarlionn@1074vectors.com</a>
+      <br />
+      <a href="tel:+919895775008" style=" font-size: 3vw; color: white;"> +91 98957 75008 </a>
+      <br />
+      <a href="https://1074vectors.com" style=" font-size: 3vw; color: white;"> Visit 1074Vectors.com </a>
+    </p>
+  </div>
+  <div style="background: #f5f5f0; margin-top:2%;">
+    <picture>
+      <img src="da_vinci.svg" class="responsive slide-small-device" alt="lidarlionn" />
+      <!--<img src="slide06.png" class="responsive slide-large-device" style="width:100%; height: auto">-->
+      <img src="da_vinci.svg" class="responsive slide-large-device" style="width:100%; height: auto">
+    </picture>
+  </div>
+
+
+</body>
+
+</html>

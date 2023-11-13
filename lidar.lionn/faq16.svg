@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="240mm"
+   viewBox="0 0 210 240"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0beta1 (08a003b, 2019-11-10)"
+   sodipodi:docname="faq16.svg">
+  <defs
+     id="defs2">
+    <rect
+       id="rect1027"
+       height="38.09019"
+       width="161.98823"
+       y="78.384765"
+       x="12.01013" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect2548"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1551"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1547"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1530"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1526"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1504"
+       effect="simplify" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect877"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1999"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <linearGradient
+       id="linearGradient1985"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ba9d01;stop-opacity:1;"
+         offset="0"
+         id="stop1983" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1981"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1504-5"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1551-3"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1547-7"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1530-8"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1526-0"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1504-0"
+       effect="simplify" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect877-6"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1999-8"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1981-5"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1504-5-0"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1551-6"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1547-2"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1530-7"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1526-09"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1504-03"
+       effect="simplify" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect877-1"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1999-3"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1981-4"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1504-5-2"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1551-7"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1547-8"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1530-3"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1526-6"
+       effect="simplify" />
+    <inkscape:path-effect
+       simplify_just_coalesce="false"
+       simplify_individual_paths="false"
+       helper_size="0"
+       smooth_angles="360"
+       threshold="0.00108696"
+       steps="1"
+       is_visible="true"
+       id="path-effect1504-9"
+       effect="simplify" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect877-3"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1999-1"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1981-6"
+       is_visible="true"
+       steps="1"
+       threshold="0.5"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect1504-5-1"
+       is_visible="true"
+       steps="1"
+       threshold="0.00108696"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.60313823"
+     inkscape:cx="329.5719"
+     inkscape:cy="467.76212"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g5472"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:pagecheckerboard="false"
+     showborder="true"
+     inkscape:showpageshadow="true"
+     borderlayer="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2514"
+       transform="translate(-4.1010419,-4.6302088)"
+       style="fill:#ffe600;fill-opacity:1" />
+    <g
+       id="g2574">
+      <g
+         id="g6610">
+        <g
+           transform="matrix(0.85962853,0,0,1.0126656,333.60281,127.84409)"
+           id="g5472">
+          <text
+             transform="scale(0.76298379,1.3106438)"
+             id="text6133"
+             y="-37.626938"
+             x="-481.6424"
+             style="font-size:14.5495px;line-height:1.25;font-family:sans-serif;stroke-width:0.545606"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffffff;stroke-width:0.545606"
+               y="-37.626938"
+               x="-481.6424"
+               id="tspan6131"
+               sodipodi:role="line" /></text>
+          <path
+             inkscape:connector-curvature="0"
+             d="m -388.07787,-126.24512 h 244.28932 v 236.9957 h -244.28932 z"
+             style="fill:#293234;fill-opacity:0.94902;stroke-width:0.641157;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+             id="rect2501" />
+          <path
+             id="rect893"
+             style="fill:#ffac2d;fill-opacity:1;stroke:none;stroke-width:0.641984;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:markers stroke fill"
+             d="m -388.07787,-126.24512 h 244.28749 v 32.90421 h -244.28749 z"
+             inkscape:connector-curvature="0" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m -335.53815,-101.97992 a 24.930827,21.163205 0 0 1 -24.93083,21.163207 24.930827,21.163205 0 0 1 -24.93082,-21.163207 24.930827,21.163205 0 0 1 24.93082,-21.1632 24.930827,21.163205 0 0 1 24.93083,21.1632"
+             style="fill:#ffffff;fill-opacity:1;stroke-width:1.02136;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+             id="path2505" />
+          <text
+             transform="scale(1.0853695,0.92134521)"
+             id="text6590"
+             y="-102.70564"
+             x="-347.00818"
+             style="font-size:21.9967px;line-height:1.25;font-family:sans-serif;fill:#ffac2d;fill-opacity:1;stroke-width:0.824875"
+             xml:space="preserve"><tspan
+               style="fill:#ffac2d;fill-opacity:1;stroke-width:0.824875"
+               y="-102.70564"
+               x="-347.00818"
+               id="tspan6588"
+               sodipodi:role="line">16</tspan></text>
+          <text
+             transform="scale(1.0853695,0.92134521)"
+             id="text6594"
+             y="-116.00684"
+             x="-298.63321"
+             style="font-size:11.3111px;line-height:1.25;font-family:sans-serif;fill:#ffffff;stroke-width:0.424166"
+             xml:space="preserve"><tspan
+               style="font-weight:bold;fill:#ffffff;stroke-width:0.424166"
+               y="-116.00684"
+               x="-298.63321"
+               id="tspan6592"
+               sodipodi:role="line">Will you supply people?</tspan></text>
+          <text
+             transform="scale(0.92782687,1.0777873)"
+             id="text6598"
+             y="-49.595455"
+             x="-399.32101"
+             style="font-size:18.4413px;line-height:1.25;font-family:sans-serif;fill:#ffffff;stroke-width:0.691547"
+             xml:space="preserve"><tspan
+               style="fill:#ffffff;stroke-width:0.691547"
+               y="-49.595455"
+               x="-399.32101"
+               id="tspan6596"
+               sodipodi:role="line"><tspan
+   id="tspan6600"
+   style="font-weight:bold;stroke-width:0.691547">No</tspan>!</tspan></text>
+          <text
+             transform="scale(1.0853695,0.92134521)"
+             id="text6604"
+             y="-15.654904"
+             x="-342.84375"
+             style="font-size:15.848px;line-height:1.25;font-family:sans-serif;fill:#ffffff;stroke-width:0.5943"
+             xml:space="preserve"><tspan
+               style="fill:#ffffff;stroke-width:0.5943"
+               y="-15.654904"
+               x="-342.84375"
+               id="tspan6602"
+               sodipodi:role="line">We supply software</tspan><tspan
+               id="tspan6606"
+               style="fill:#ffffff;stroke-width:0.5943"
+               y="4.1550951"
+               x="-342.84375"
+               sodipodi:role="line">only. Surely, we offer</tspan><tspan
+               id="tspan6608"
+               style="fill:#ffffff;stroke-width:0.5943"
+               y="23.965092"
+               x="-342.84375"
+               sodipodi:role="line">training and</tspan><tspan
+               id="tspan6610"
+               style="fill:#ffffff;stroke-width:0.5943"
+               y="43.775093"
+               x="-342.84375"
+               sodipodi:role="line">consultancy.</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
